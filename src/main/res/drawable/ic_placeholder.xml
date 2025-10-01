@@ -1,0 +1,21 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Background rectangle -->
+    <path
+        android:fillColor="#DDDDDD"
+        android:pathData="M2,2h20v20h-20z" />
+
+    <!-- Picture frame mountain shape -->
+    <path
+        android:fillColor="#AAAAAA"
+        android:pathData="M4,18l5,-6l4,5l5,-7l6,8z" />
+
+    <!-- Sun / Circle -->
+    <path
+        android:fillColor="#888888"
+        android:pathData="M8,7a2,2 0 1,0 4,0a2,2 0 1,0 -4,0" />
+</vector>

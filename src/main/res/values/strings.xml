@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">KilkBid</string>
+    <string name="category_icon">Category icon</string>
+    <string name="notification">Notifications</string>
+    <string name="reactions_count">%d reactions</string>
+    <string name="replies_count">%d replies</string>
+
+</resources>

@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="item_spacing">16dp</dimen>
+    <dimen name="category_item_spacing">16dp</dimen>
+
+</resources>

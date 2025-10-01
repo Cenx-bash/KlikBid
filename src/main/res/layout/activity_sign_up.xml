@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:background="#F9F9F9"
+    tools:context=".SignUp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/ic_bidding"
+            android:contentDescription="App Logo"
+            android:layout_marginTop="32dp"/>
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Card-style form container -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            android:padding="24dp">
+
+            <LinearLayout
+                android:id="@+id/fieldsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/etFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Full Name"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/minimal_edittext"
+                    android:padding="12dp"
+                    android:textColor="#333333"
+                    android:textColorHint="#999999"
+                    android:fontFamily="sans-serif"/>
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/minimal_edittext"
+                    android:padding="12dp"
+                    android:layout_marginTop="16dp"
+                    android:textColor="#333333"
+                    android:textColorHint="#999999"
+                    android:fontFamily="sans-serif"/>
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:background="@drawable/minimal_edittext"
+                    android:padding="12dp"
+                    android:layout_marginTop="16dp"
+                    android:textColor="#333333"
+                    android:textColorHint="#999999"
+                    android:fontFamily="sans-serif"/>
+
+                <EditText
+                    android:id="@+id/etConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:background="@drawable/minimal_edittext"
+                    android:padding="12dp"
+                    android:layout_marginTop="16dp"
+                    android:textColor="#333333"
+                    android:textColorHint="#999999"
+                    android:fontFamily="sans-serif"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Sign Up"
+            android:backgroundTint="#6200EE"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0.05"
+            android:stateListAnimator="@null"
+            android:background="@drawable/rounded_button"
+            android:layout_marginTop="32dp"/>
+
+        <!-- Login Link -->
+        <TextView
+            android:id="@+id/tvLoginLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? Log In"
+            android:textSize="14sp"
+            android:textColor="#6200EE"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif"/>
+
+    </LinearLayout>
+</ScrollView>
